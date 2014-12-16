@@ -1,9 +1,9 @@
 package streams
 
 import (
-	"errors"
 	"encoding/json"
-	
+	"errors"
+
 	"github.com/rfliam/heapdumptest/mpegts"
 )
 
@@ -46,7 +46,7 @@ type TransportStreamInfo struct {
 	PMT       mpegts.PMT
 	PMTPacket mpegts.Packet
 
-	PMTPid    uint16
+	PMTPid uint16
 
 	EsInfos map[uint16]ElementaryStreamInfo // From pid to elementarystreaminfo, will only contain up streams
 }
